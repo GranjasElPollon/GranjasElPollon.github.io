@@ -20,6 +20,7 @@ html {
 .container {
   max-width: 1240px;
   margin: auto auto;
+  overflow: hidden;
 }
 
 .tema {
@@ -49,7 +50,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 40rem;
   position: relative;
 }
@@ -342,7 +343,7 @@ nav {
   border: 3px solid #74ad00;
   font-size: 2.2rem;
   color: #74ad00;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   width: 30rem;
   text-align: center;
   cursor: pointer;
@@ -351,7 +352,7 @@ nav {
 /*banner*/
 
 .banner {
-  background-image: url(../img/banner2.png);
+  background-image: url(../img/banner2-min.png);
   background-size: cover;
   background-position: center;
   height: 50rem;
@@ -502,6 +503,10 @@ form textarea {
 .menu h2 {
   font-size: 4.5rem;
   color: white;
+}
+
+.menu nav{
+  display: block;
 }
 
 .menu a {
@@ -710,29 +715,71 @@ footer .redes {
   background-color: white;
   text-align: center;
 }
+
+form{
+  margin-left: 0;
+}
+
+form input{
+  font-family: 'Montserrat';
+}
+
+/*gracias*/
+
+.gracias{
+  background: rgb(231,50,1);
+  background: linear-gradient(0deg, rgba(231,50,1,1) 0%, rgba(255,138,0,1) 100%);
+  height: 100vh;
+  
+}
+.cont_gracias{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  grid-template-rows: 100vh;
+}
+
+.img-gracias img{
+  width: 100%;
+}
+
+.text_gracias h1{
+  /* color: white; */
+  /* font-size: 5rem; */
+  font-family: 'Staatliches';
+}
+
+.text_gracias h2{
+  color: white;
+}
 /*Resposive*/
 
 @media screen and (max-width: 1100px) {
+
+  .container{
+    max-width: 90%;
+  }
+
   /*header*/
 
   header::before {
-    height: 66rem;
+    height: 100vh;
   }
 
   .header_1::before {
-    height: 66rem;
+    height: 100vh;
   }
 
   .header_2::before {
-    height: 66rem;
+    height: 100vh;
   }
 
-  .header_3::before::before {
-    height: 66rem;
+  .header_3::before{
+    height: 100vh;
   }
 
   .text__header {
-    height: 66rem;
+    height: 100vh;
   }
 
   .barra .logo img {
@@ -776,6 +823,25 @@ footer .redes {
 
   .desc {
     font-size: 1.7rem;
+  }
+
+  .gracias{
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .cont_gracias{
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: inherit;
+  }
+
+  .img-gracias{
+    display: flex;
+    justify-content: center;
+  }
+
+  .text_gracias{
+    text-align: center;
   }
 }
 
@@ -826,8 +892,29 @@ footer .redes {
   /*reutilizar*/
 
   .container {
-    max-width: 650px;
+    max-width: 90%;
   }
+
+  header::before{
+height: 90vh;
+  }
+
+  .header_1::before{
+height: 90vh;
+  }
+
+  .header_2::before{
+height: 90vh;
+  }
+
+  .header_3::before{
+height: 90vh;
+  }
+
+  .text__header{
+    height: 90vh;
+  }
+
 
   /*barra*/
 
@@ -868,6 +955,18 @@ footer .redes {
     width: 50%;
   }
 
+  .cont__cuidado{
+    padding-top: 3rem;
+    margin-top: 0;
+  }
+
+  /*info*/
+
+  .info{
+    margin-top: 5rem;
+    width: 90%;
+  }
+
   /*contacto*/
 
   .contenedor__contacto {
@@ -889,6 +988,18 @@ footer .redes {
 
   .redes{
     width: 90%;
+  }
+
+  .menu{
+    margin-left: 0;
+  }
+
+  .menu nav a:last-of-type{
+    margin-right: 0;
+  }
+
+  .suscripcion{
+    margin-left: 0;
   }
 }
 
@@ -1018,7 +1129,7 @@ footer .redes {
   /*cuidado*/
 
   .cont__cuidado{
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
 
   .cuidado .img-cuidado img{
@@ -1090,14 +1201,51 @@ footer .redes {
     width: 90%;
   }
 
+  .form-aparte{
+    width: 92%;
+    margin: auto ;
+  }
+
    /*footer*/
 
-   .contenedor__footer .menu nav{
-     flex-direction: column;
+   .menu h2{
+     font-size: 3.7rem;
+     font-weight: lighter;
+     text-align: center;
+   }
+
+   .menu nav{
+     width: 10rem;
+     margin: auto auto;
+     text-align: center;
+   }
+
+   .suscripcion h2{
+    font-size: 3.7rem;
+    font-weight: lighter;
+    text-align: center;
+   }
+
+   .menu nav a{
+     margin-right: 0;
    }
 
    .suscripcion button{
      margin: 1rem;
+   }
+
+   .derechos{
+     font-size: 1.8rem;
+     font-weight: lighter;
+   }
+
+   .gracias{
+     height: 100%;
+     padding-bottom: 15%;
+   }
+
+   .cont_gracias{
+     grid-template-rows: 37rem;
    }
 }
 
