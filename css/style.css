@@ -500,21 +500,23 @@ form textarea {
   margin-left: 2rem;
 }
 
-.menu h2 {
-  font-size: 4.5rem;
+.menu h2{
+  font-size:3.5rem;
   color: white;
+  font-family:"Montserrat";
+  margin-bottom:5.9rem;
 }
-
 .menu nav{
   display: block;
 }
 
-.menu a {
-  font-size: 2.2rem;
+.menu a{
+  font-size: 1.8rem;
   text-decoration: none;
   color: aliceblue;
   margin-right: 2rem;
   font-weight: lighter;
+  font-family: "Montserrat";
 }
 
 .suscripcion {
@@ -522,9 +524,10 @@ form textarea {
 }
 
 .suscripcion h2 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   color: white;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3.9rem;
+  font-family: "Montserrat";
 }
 
 .suscripcion input {
@@ -533,7 +536,7 @@ form textarea {
   padding: 1rem;
   border-radius: 0.5rem;
   width: 30rem;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 
 .suscripcion button {
@@ -552,21 +555,38 @@ footer .redes {
   margin-top: 9rem;
   border-top: 1px solid white;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer .redes a {
-  font-size: 3.3rem;
+  font-size: 2.7rem;
   text-align: center;
   text-decoration: none;
   color: white;
-  margin-top: 2rem;
+  margin: 1.8rem 0.5rem;
   display: inline-block;
+  font-weight: lighter;
+  padding: 1rem;
+  border-radius: 50rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease 0.2s all;
+}
+
+.footer .redes a:hover {
+  background-color: #ff4800;
 }
 
 .derechos {
   text-align: center;
   color: white;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+  font-family: "Montserrat";
+  font-weight: lighter;
 }
 
 /*red social*/
@@ -646,7 +666,7 @@ footer .redes {
 
 /*2 barra nav*/
 
-.barra-navegador-dos{
+.barra-navegador-dos {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -659,14 +679,14 @@ footer .redes {
 }
 
 .productos .producto-aparte {
-   margin-top: 0rem;
+  margin-top: 0rem;
 }
 
-.barra-navegador-dos .img-logo .logo{
+.barra-navegador-dos .img-logo .logo {
   width: 11rem;
 }
 
-.nav a{
+.nav a {
   position: relative;
   margin-left: 3.5rem;
   text-decoration: none;
@@ -678,7 +698,7 @@ footer .redes {
   color: var(--color__tema);
 }
 
-.volver{
+.volver {
   text-decoration: none;
   font-size: 3rem;
   color: var(--color__tema);
@@ -687,11 +707,11 @@ footer .redes {
 }
 
 .form-aparte {
-   margin-left: 0;
+  margin-left: 0;
   width: 97%;
 }
 
-.cancelar{
+.cancelar {
   display: inline-block;
   text-decoration: none;
   font-size: 2.2rem;
@@ -708,7 +728,7 @@ footer .redes {
   /* margin-left: 6rem; */
 }
 
-.cancelar:hover{
+.cancelar:hover {
   border: 3px solid #a80000;
   font-size: 2.2rem;
   color: #a80000;
@@ -716,46 +736,47 @@ footer .redes {
   text-align: center;
 }
 
-form{
+form {
   margin-left: 0;
 }
 
-form input{
-  font-family: 'Montserrat';
+form input {
+  font-family: "Montserrat";
 }
 
 /*gracias*/
 
-.gracias{
-  background: rgb(231,50,1);
-  background: linear-gradient(0deg, rgba(231,50,1,1) 0%, rgba(255,138,0,1) 100%);
-  height: 100vh;
-  
+.gracias {
+  background: rgb(231, 50, 1);
+  background: linear-gradient(
+    0deg,
+    rgba(231, 50, 1, 1) 0%,
+    rgba(255, 138, 0, 1) 100%
+  );
+  height:100vh;
 }
-.cont_gracias{
+.cont_gracias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   grid-template-rows: 100vh;
 }
 
-.img-gracias img{
-  width: 100%;
+.img-gracias img {
+  width:100%;
 }
 
-.text_gracias h1{
-  /* color: white; */
-  /* font-size: 5rem; */
+/* .text_gracias h1{
   font-family: 'Staatliches';
-}
+} */
 
-.text_gracias h2{
+.text_gracias h2 {
   color: white;
 }
 
 /*iconos*/
 
-.icono{
+.icono {
   position: fixed;
   pointer-events: none;
   display: none;
@@ -764,8 +785,7 @@ form input{
 /*Resposive*/
 
 @media screen and (max-width: 1100px) {
-
-  .container{
+  .container {
     max-width: 90%;
   }
 
@@ -783,7 +803,7 @@ form input{
     height: 100vh;
   }
 
-  .header_3::before{
+  .header_3::before {
     height: 100vh;
   }
 
@@ -834,22 +854,22 @@ form input{
     font-size: 1.7rem;
   }
 
-  .gracias{
+  .gracias {
     height: 100%;
     padding-bottom: 2rem;
   }
 
-  .cont_gracias{
+  .cont_gracias {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: inherit;
   }
 
-  .img-gracias{
+  .img-gracias {
     display: flex;
     justify-content: center;
   }
 
-  .text_gracias{
+  .text_gracias {
     text-align: center;
   }
 }
@@ -892,7 +912,7 @@ form input{
     width: 70rem;
   }
 
-  .form-2{
+  .form-2 {
     width: 90%;
   }
 }
@@ -904,26 +924,25 @@ form input{
     max-width: 90%;
   }
 
-  header::before{
-height: 90vh;
-  }
-
-  .header_1::before{
-height: 90vh;
-  }
-
-  .header_2::before{
-height: 90vh;
-  }
-
-  .header_3::before{
-height: 90vh;
-  }
-
-  .text__header{
+  header::before {
     height: 90vh;
   }
 
+  .header_1::before {
+    height: 90vh;
+  }
+
+  .header_2::before {
+    height: 90vh;
+  }
+
+  .header_3::before {
+    height: 90vh;
+  }
+
+  .text__header {
+    height: 90vh;
+  }
 
   /*barra*/
 
@@ -964,14 +983,14 @@ height: 90vh;
     width: 50%;
   }
 
-  .cont__cuidado{
+  .cont__cuidado {
     padding-top: 3rem;
     margin-top: 0;
   }
 
   /*info*/
 
-  .info{
+  .info {
     margin-top: 5rem;
     width: 90%;
   }
@@ -991,46 +1010,45 @@ height: 90vh;
     width: 50%;
   }
 
-  .form-2{
+  .form-2 {
     width: 100%;
   }
 
-  .redes{
+  .redes {
     width: 90%;
   }
 
-  .menu{
+  .menu {
     margin-left: 0;
   }
 
-  .menu nav a:last-of-type{
+  .menu nav a:last-of-type {
     margin-right: 0;
   }
 
-  .suscripcion{
+  .suscripcion {
     margin-left: 0;
   }
 }
 
-@media screen and (max-width: 630px) {
-
+@media screen and (max-width: 630px){
   /*navegador-2*/
 
-  .barra-navegador-dos{
+  .barra-navegador-dos {
     margin: 0rem 2rem;
     padding-top: 1rem;
   }
 
-  .nav a{
+  .nav a {
     font-size: 2.2rem;
     display: none;
   }
 
-  .volver{
+  .volver {
     display: block;
   }
 
-  .form-aparte{
+  .form-aparte {
     width: 100%;
   }
 
@@ -1075,7 +1093,7 @@ height: 90vh;
     transform: translateX(0%);
   }
 
-  .bodydos{
+  .bodydos {
     background-color: #79797977;
     z-index: 500000;
   }
@@ -1093,10 +1111,12 @@ height: 90vh;
 
   .enlaces ul li a {
     color: var(--color__tema);
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-color: var(--color__tema);
     /* text-align: center; */
     margin-left: 0;
+    font-family: 'Montserrat';
+    text-transform: capitalize;
   }
 
   .container {
@@ -1137,7 +1157,7 @@ height: 90vh;
 
   /*iconos*/
 
-  .enlaces ul li .icono{
+  .enlaces ul li .icono {
     display: block;
     pointer-events: initial;
     margin-right: 2rem;
@@ -1147,189 +1167,185 @@ height: 90vh;
 }
 
 @media screen and (max-width: 540px) {
-  
-  .tema{
+  .tema {
     font-size: 5rem;
   }
-  
+
   /*cuidado*/
 
-  .cont__cuidado{
+  .cont__cuidado {
     margin-top: 5rem;
   }
 
-  .cuidado .img-cuidado img{
+  .cuidado .img-cuidado img {
     width: 70%;
   }
 
   /*productos*/
 
-  .productos{
+  .productos {
     margin-top: 10rem;
   }
 
-  .productos__contenedor{
+  .productos__contenedor {
     margin-top: 5rem;
   }
 
-  .texto-producto{
+  .texto-producto {
     margin-top: 3rem;
   }
 
   /*banner*/
 
-  .banner .text-banner h2{
+  .banner .text-banner h2 {
     font-size: 6.7rem;
   }
 
-  .banner .text-banner h3{
+  .banner .text-banner h3 {
     font-size: 2.5rem;
   }
 
   /*formulario*/
 
-  .inp__juntos{
+  .inp__juntos {
     flex-direction: column;
   }
 
-  .suscripcion button{
+  .suscripcion button {
     margin: 1rem;
   }
-
 }
 
 @media screen and (max-width: 468px) {
-  .text__header h1{
+  .text__header h1 {
     font-size: 6rem;
     height: 8rem;
   }
 }
 
-@media screen and (max-width: 450px){
-   .container{
-     max-width: 95%;
-   }
+@media screen and (max-width: 450px) {
+  .container {
+    max-width: 95%;
+  }
 
-   .tema{
-     font-size: 4rem;
-   }
+  .tema {
+    font-size: 4rem;
+  }
 
-   /*header*/
+  /*header*/
 
-   .text__header h1{
-     font-size: 6.5rem;
-     height: 8rem;
-   }
+  .text__header h1 {
+    font-size: 6.5rem;
+    height: 8rem;
+  }
 
-   /*productos*/
+  /*productos*/
 
-   .productos__contenedor .img-producto img{
+  .productos__contenedor .img-producto img {
     width: 90%;
   }
 
-  .form-aparte{
+  .form-aparte {
     width: 92%;
-    margin: auto ;
+    margin: auto;
   }
 
-   /*footer*/
+  /*footer*/
 
-   .menu h2{
-     font-size: 3.7rem;
-     font-weight: lighter;
-     text-align: center;
-   }
-
-   .menu nav{
-     width: 10rem;
-     margin: auto auto;
-     text-align: center;
-   }
-
-   .suscripcion h2{
+  .menu h2 {
     font-size: 3.7rem;
-    font-weight: lighter;
     text-align: center;
-   }
+  }
 
-   .menu nav a{
-     margin-right: 0;
-   }
+  .menu nav {
+    width: 10rem;
+    margin: auto auto;
+    text-align: center;
+  }
 
-   .suscripcion button{
-     margin: 1rem;
-   }
+  .suscripcion h2{
+    font-size:3.7rem;
+    text-align:center;
+  }
 
-   .derechos{
-     font-size: 1.8rem;
-     font-weight: lighter;
-   }
+  .menu nav a {
+    margin-right: 0;
+  }
 
-   .gracias{
-     height: 100%;
-     padding-bottom: 15%;
-   }
+  .suscripcion button {
+    margin: 1rem;
+  }
 
-   .cont_gracias{
-     grid-template-rows: 37rem;
-   }
+  .derechos {
+    font-size: 1.8rem;
+    font-weight: lighter;
+  }
+
+  .gracias {
+    height: 100%;
+    padding-bottom: 15%;
+  }
+
+  .cont_gracias {
+    grid-template-rows: 37rem;
+  }
 }
 
-@media screen and (max-width: 350px){
-   .text__header h1{
-     font-size: 5rem;
-     height: 7rem;
-   }
+@media screen and (max-width: 350px) {
+  .text__header h1 {
+    font-size: 5rem;
+    height: 7rem;
+  }
 
-   .text__header h2{
+  .text__header h2 {
     font-size: 3.5rem;
   }
 
   /*nav*/
 
-  .enlaces{
+  .enlaces {
     width: 80%;
   }
 
-  .enlaces ul li{
+  .enlaces ul li {
     margin: 2rem 1rem 5rem 2rem;
   }
 
   /*productos*/
 
-  .productos__contenedor .img-producto img{
+  .productos__contenedor .img-producto img {
     width: 100%;
   }
 
-  .productos__contenedor .comprar-b{
+  .productos__contenedor .comprar-b {
     width: 100%;
   }
 
-  .name-p{
+  .name-p {
     font-size: 2.7rem;
   }
 
   /*footer*/
 
-  .contenedor__footer h2{
+  .contenedor__footer h2 {
     text-align: center;
     font-size: 3.5rem;
   }
 
-  .contenedor__footer .menu{
+  .contenedor__footer .menu {
     margin: 0;
   }
 
-  .contenedor__footer .menu a{
+  .contenedor__footer .menu a {
     margin: 0;
   }
 
-  .suscripcion h2{
+  .suscripcion h2 {
     margin: 5rem auto;
     font-size: 3.5rem;
   }
 
-  .suscripcion input{
+  .suscripcion input {
     margin: 0;
   }
 }

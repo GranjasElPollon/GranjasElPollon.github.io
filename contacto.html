@@ -25,7 +25,8 @@
     <meta property="twitter:title" content="Granjas El Pollon,  La Granja Confiable y Segura ">
     <meta property="twitter:description" content="Encuentra los huevos mas frescos, aseados y confiables en el mercado, ¡Te esperamos en nuestra tienda online!">
     <meta property="twitter:image" content="https://granjaselpollon.github.io/img/Portada.jpg">
-    </head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body id="body" class="">
 
@@ -37,7 +38,7 @@
                <nav class="enlaces">
               
                 <ul>
-                    <li> <a class="icon-home icono" href="index.html"></a> <ahref="index.html">Inicio</a></li>
+                    <li> <a class="icon-home icono" href="index.html"></a> <a href="index.html">Inicio</a></li>
                     <li> <a class="icon-users icono" href="nosotros.html"></a> <a href="nosotros.html">Nosotros</a></li>
                     <li> <a class="icon-th-thumb icono" href="encarganos.html"></a> <a href="encarganos.html">Encarganos</a></li>
                     <li> <a class="icon-paper-plane icono" href="contacto.html"></a> <a class="seccion seccion-2"  href="contacto.html">Contacto</a></li>
@@ -61,18 +62,18 @@
 
     <section class="red-social container">
         <div>
-            <a class="icon-facebook" href=""></a>
-            <h2>F a c e b o o k </h2>
+            <a data-aos="fade-up" class="icon-facebook" href=""></a>
+            <h2 data-aos="fade-up">F a c e b o o k </h2>
         </div>
 
         <div>
-            <a class="icon-instagram" href=""></a>
-            <h2>I n s t a g r a m</h2>
+            <a data-aos="fade-up" class="icon-instagram" href=""></a>
+            <h2 data-aos="fade-up">I n s t a g r a m</h2>
         </div>
 
         <div>
-            <a class="icon-whatsapp" href=""></a>
-            <h2>W h a t s A p p </h2>
+            <a data-aos="fade-up" class="icon-whatsapp" href=""></a>
+            <h2 data-aos="fade-up">W h a t s A p p </h2>
         </div>
     </section>
 
@@ -82,7 +83,7 @@
 
         <div class="contenedor__contacto">
 
-            <form action="https://formsubmit.co/granjaselpollon.oficial@gmail.com" method="POST">
+            <form data-aos="fade-right" action="https://formsubmit.co/granjaselpollon.oficial@gmail.com" method="POST">
                 <h2 class="name-p">Pedido Grande</h2>
         <p class="desc">¿Necesitas hacer un pedido Grande? Puedes ponerte en Contacto con nosotros</p>
 
@@ -96,7 +97,7 @@
                 <input type="hidden" name="_next" value="https://granjaselpollon.github.io/gracias.html">
             </form>
             
-            <div class="imagen__contacto">
+            <div class="imagen__contacto" data-aos="fade-left">
                 <img src="img/carton-de-huevos.png" alt="">
             </div>
 
@@ -108,40 +109,43 @@
 
         <div class="contenedor__footer container">
 
-            <div class="menu">
-                <h2>granjas "el pollon"</h2>
+            <div class="menu" data-aos="fade-right">
+                <h2>Granjas "El Pollon"</h2>
 
+                <nav>
                     <a href="">Inicio</a>
                     <a href="">Nosotros</a>
                     <a href="">Encarganos</a>
                     <a href="">Contactanos</a>
+                </nav>
             </div>
 
-            <!-- <div class="redes">
-                <h2>Redes Sociales</h2>
-                
-            </div> -->
-
-            <div class="suscripcion">
+            <div class="suscripcion" data-aos="fade-left">
+                <form action="https://formsubmit.co/granjaselpollon.oficial@gmail.com" method="POST">
                 <h2>¡Suscribete! a "El Pollon"</h2>
                 <input placeholder="Escribe tu correo" type="email">
                 <button type="submit">Enviar</button>
-                
-            
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://granjaselpollon.github.io/gracias.html">
+            </form>
             </div>
 
         </div>
 
         <div class="redes container">
-            <a class="icon-facebook" href=""></a>
-            <a class="icon-instagram" href=""></a>
-            <a class="icon-whatsapp" href=""></a>
+            <a  data-aos="fade-up" class="icon-facebook" href=""></a>
+            <a  data-aos="fade-up" class="icon-instagram" href=""></a>
+            <a  data-aos="fade-up" class="icon-whatsapp" href=""></a>
         </div>
 
-        <div class="derechos">Derechos reservados © Granjas "el Pollon"</div>
+        <div  class="derechos">Derechos reservados © Granjas "el Pollon"</div>
 
      </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
