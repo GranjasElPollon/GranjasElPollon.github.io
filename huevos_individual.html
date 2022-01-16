@@ -27,16 +27,17 @@ Encuentra los huevos mas frescos, aseados y confiables en el mercado, ¡Te esper
 <meta property="twitter:title" content="Granjas El Pollon,  La Granja Confiable y Segura ">
 <meta property="twitter:description" content="Encuentra los huevos mas frescos, aseados y confiables en el mercado, ¡Te esperamos en nuestra tienda online!">
 <meta property="twitter:image" content="https://granjaselpollon.github.io/img/Portada.jpg">
-</head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
     <div class="barra-navegador-dos">
-        <div class="img-logo">
+        <div class="img-logo" data-aos="fade-down">
             <img class="logo" src="img/pollito__bae.png" alt="">
         </div>
 
-        <div class="nav">
+        <div class="nav" data-aos="fade-right">
             <a class="icon-right" href="index.html"></a>
         </div>
 
@@ -47,32 +48,32 @@ Encuentra los huevos mas frescos, aseados y confiables en el mercado, ¡Te esper
     <section class="container productos producto-aparte">
     <div class="productos__contenedor producto-aparte">
         
-        <div class="img-producto">
+        <div class="img-producto" data-aos="fade-right">
             <img src="img/p4.jpg" alt="">
         </div>
         <div class="texto-producto">
-            <h3 class="name-p">Huevos en Forma Individual</h3>
-            <p class="desc-p">Cantidad: 1 huevo en perfecto estado</p>
-            <p class="desc-p">Precio: 0.15$ centavos</p>
+            <h3 data-aos="fade-up" class="name-p">Huevos en Forma Individual</h3>
+            <p data-aos="fade-up" class="desc-p">Cantidad: 1 huevo en perfecto estado</p>
+            <p data-aos="fade-up" class="desc-p">Precio: 0.15$ centavos</p>
             <div class="boton">
             </div>
             
             <form class="form-aparte" action="#">
 
-                <input id="nombretres" placeholder="Nombre" type="text" required>
+                <input data-aos="fade-up" id="nombretres" placeholder="Nombre" type="text" required>
     
-                <input id="cartonestres" placeholder="Numero de Huevos" type="number" required>
+                <input data-aos="fade-up" id="cartonestres" placeholder="Numero de Huevos" type="number" required>
     
-                <p class="desc-p">Dia que querra su pedido</p>
+                <p data-aos="fade-up" class="desc-p">Dia que querra su pedido</p>
     
-                <input id="diatres" type="date" required>
+                <input data-aos="fade-up" id="diatres" type="date" required>
     
                 </form>
-                <p class="desc-p">¡Hey! Muchas gracias por tu Pedido...</p>
+                <p data-aos="fade-up" class="desc-p">¡Hey! Muchas gracias por tu Pedido...</p>
 
                 
-                <button id="enviar-tres" class="comprar-b icon-whatsapp">Enviar Pedido</button>
-                <a href="index.html"><button class="cancelar" href="index.html">Cancelar Pedido</button></a>
+                <button data-aos="fade-up" id="enviar-tres" class="comprar-b icon-whatsapp">Enviar Pedido</button>
+                <a href="index.html"><button data-aos="fade-up" class="cancelar" href="index.html">Cancelar Pedido</button></a>
         </div>
 
         
@@ -88,10 +89,10 @@ Encuentra los huevos mas frescos, aseados y confiables en el mercado, ¡Te esper
                 <h2>Granjas "El Pollon"</h2>
 
                 <nav>
-                    <a href="">Inicio</a>
-                    <a href="">Nosotros</a>
-                    <a href="">Encarganos</a>
-                    <a href="">Contactanos</a>
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="encarganos.html">Encarganos</a>
+                    <a href="contacto.html">Contactanos</a>
                 </nav>
             </div>
 
@@ -119,5 +120,9 @@ Encuentra los huevos mas frescos, aseados y confiables en el mercado, ¡Te esper
 
      <script src="js/enviar3.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

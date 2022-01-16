@@ -553,7 +553,7 @@ form textarea {
 
 footer .redes {
   margin-top: 9rem;
-  border-top: 1px solid white;
+  border-top: 1px solid #818181;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -725,7 +725,7 @@ footer .redes {
   transition: ease 0.2s all;
   margin-top: 1rem;
   text-align: center;
-  /* margin-left: 6rem; */
+  cursor: pointer;
 }
 
 .cancelar:hover {
