@@ -90,7 +90,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/background-min.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -1113,7 +1113,7 @@ form input {
 
   .enlaces ul li a {
     color: var(--color__tema);
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-color: var(--color__tema);
     /* text-align: center; */
     margin-left: 0;

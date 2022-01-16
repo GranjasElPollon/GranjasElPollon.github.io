@@ -45,3 +45,9 @@ sr.reveal('.anim-header', {
     duration:3000,
     origin:'bottom',
 });
+
+sr.reveal('.anim-letter', {
+    duration:3000,
+    origin:'top',
+    distance:'-100px'
+});
