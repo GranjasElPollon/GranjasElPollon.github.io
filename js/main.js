@@ -7,9 +7,13 @@ window.addEventListener("scroll", function () {
 const enlaces = document.getElementsByClassName("enlaces")[0];
 const hamburguesa = document.getElementsByClassName("hamburguesa")[0];
 const menuHamburguesa = document.getElementById("hamburguesa");
+const body = document.getElementById("body");[0]
 let abierto = false;
 
 const toggleMenu = () => {
+
+    body.classList.toggle("bodydos");
+    body.style.transition = ("background-color 0.5s ease-in-out");
     enlaces.classList.toggle("enlaces2");
     enlaces.style.transition = "transform 0.4s ease-in-out";
 }
