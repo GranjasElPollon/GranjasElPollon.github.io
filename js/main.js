@@ -39,4 +39,9 @@ window.addEventListener("click", function (e) {
 })
 
 
+window.sr = ScrollReveal();
 
+sr.reveal('.anim-header', {
+    duration:3000,
+    origin:'bottom',
+});

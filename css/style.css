@@ -1115,7 +1115,7 @@ form input {
     border-color: var(--color__tema);
     /* text-align: center; */
     margin-left: 0;
-    font-family: 'Montserrat';
+    font-family: 'Staatliches';
     text-transform: capitalize;
   }
 
@@ -1161,7 +1161,7 @@ form input {
     display: block;
     pointer-events: initial;
     margin-right: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-left: 3rem;
   }
 }
@@ -1347,5 +1347,11 @@ form input {
 
   .suscripcion input {
     margin: 0;
+  }
+
+  /*boton cancelar*/
+
+  .cancelar{
+    width: 100%;
   }
 }
