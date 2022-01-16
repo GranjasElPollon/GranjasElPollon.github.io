@@ -1139,6 +1139,7 @@ height: 90vh;
 
   .enlaces ul li .icono{
     display: block;
+    pointer-events: initial;
     margin-right: 2rem;
     font-size: 2.5rem;
     margin-left: 3rem;

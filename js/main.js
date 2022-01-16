@@ -15,7 +15,7 @@ const toggleMenu = () => {
     body.classList.toggle("bodydos");
     body.style.transition = ("background-color 0.5s ease-in-out");
     enlaces.classList.toggle("enlaces2");
-    enlaces.style.transition = "transform 0.4s ease-in-out";
+    enlaces.style.transition = " transform 0.4s ease-in-out";
 }
 
 
