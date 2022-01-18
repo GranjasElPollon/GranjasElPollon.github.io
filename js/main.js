@@ -38,6 +38,7 @@ window.addEventListener("click", function (e) {
     }
 })
 
+//animacion//
 
 window.sr = ScrollReveal();
 
@@ -51,3 +52,4 @@ sr.reveal('.anim-letter', {
     origin:'top',
     distance:'-100px'
 });
+

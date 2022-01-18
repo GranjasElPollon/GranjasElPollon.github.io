@@ -2,7 +2,7 @@
 body {
   font-size: 1.6rem;
   line-height: 1.5;
-  font-family: "Staatliches", "Open Sans Condensed", "Alumni Sans", "Bebas Neue",
+  font-family: "Staatliches", "Alumni Sans", "Bebas Neue",
     "Montserrat";
 }
 
@@ -729,7 +729,18 @@ footer .redes {
   cursor: pointer;
 }
 
-.cancelar:hover {
+.cancelar a{
+  color: white;
+  text-decoration: none;
+}
+
+.cancelar a:hover{
+  color: #a80000;
+  text-decoration: none;
+  transition: ease .3s all;
+}
+
+.cancelar:hover{
   border: 3px solid #a80000;
   font-size: 2.2rem;
   color: #a80000;
@@ -743,6 +754,10 @@ form {
 
 form input {
   font-family: "Montserrat";
+}
+
+.form-aparte button:hover{
+  color: #a80000;
 }
 
 /*gracias*/
@@ -782,6 +797,17 @@ form input {
   pointer-events: none;
   display: none;
 }
+
+/*alertas*/
+
+.alert-title{
+  font-size:2rem;
+}
+
+.swal2-icon.swal2-warning{
+  border: 5px #facea8;
+}
+
 
 /*Resposive*/
 

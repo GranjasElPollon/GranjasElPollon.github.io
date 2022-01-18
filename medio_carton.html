@@ -26,6 +26,8 @@ Encuentra los huevos mas frescos, aseados y confiables en el mercado, ¡Te esper
 <meta property="twitter:description" content="Encuentra los huevos mas frescos, aseados y confiables en el mercado, ¡Te esperamos en nuestra tienda online!">
 <meta property="twitter:image" content="https://granjaselpollon.github.io/img/Portada.jpg">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 <body>
 
@@ -65,8 +67,7 @@ Encuentra los huevos mas frescos, aseados y confiables en el mercado, ¡Te esper
             <p class="desc-p" data-aos="fade-up">¡Hey! Muchas gracias por tu Pedido...</p>
 
             <button data-aos="fade-up" id="enviar-dos" class="comprar-b icon-whatsapp">Enviar Pedido</button>
-            <a href="index.html"><button data-aos="fade-up" class="cancelar" href="index.html">Cancelar Pedido</button></a>
-
+            <button onclick="cancelar()" data-aos="fade-up"  class="cancelar">Cancelar Pedido</button>
             
 
         </div>
@@ -113,8 +114,8 @@ Encuentra los huevos mas frescos, aseados y confiables en el mercado, ¡Te esper
 
      </footer>
 
-
-     <script src="js/enviar2.js"></script>
+    <script src="js/alertas.js"></script>
+    <script src="js/enviar2.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
